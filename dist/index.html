@@ -1,1 +1,190 @@
-我在测试这个网站11111
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小南资源库</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ========================================
+         📝 超简单修改指南 - 对应修改指南.txt
+         ========================================
+         1️⃣ 修改个人信息：找到标记区域直接修改文字
+         2️⃣ 修改统计数据：修改关注者、点击量、链接数
+         3️⃣ 修改链接：修改 href 地址和显示文字
+         4️⃣ 添加新链接：复制链接代码并修改内容
+         5️⃣ 修改二维码：在 simple-script.js 中修改设置
+         6️⃣ 修改背景图：在 styles.css 中修改图片路径
+         7️⃣ 调整透明度：在 styles.css 中修改透明度数值
+         8️⃣ 保存文件后用浏览器打开查看效果
+         ======================================== -->
+
+    <div class="container">
+        <!-- 背景动画 -->
+        <div class="background-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+        </div>
+
+        <!-- 主要内容 -->
+        <main class="profile-container">
+            <div class="shimmer-line"></div>
+            
+            <!-- ========================================
+                 👤 个人信息区域 - 修改指南 1️⃣
+                 ======================================== -->
+            <section class="profile-header">
+                <div class="avatar-container">
+                    <!-- 🖼️ 修改头像：替换 Tx.jpg 文件，或修改下面的文件名 -->
+                    <img src="Tx.jpg" alt="头像" class="avatar" id="avatarImg">  <!-- ← 修改这里：头像文件名 -->
+                    <div class="avatar-border"></div>
+                    <!-- 装饰点效果 -->
+                    <div class="decoration-dot"></div>
+                    <div class="decoration-dot"></div>
+                    <div class="decoration-dot"></div>
+                    <div class="decoration-dot"></div>
+                </div>
+                
+                <!-- 📝 修改用户名：直接修改下面引号内的文字 -->
+                <h1 class="profile-name" id="profileName">CYBER-南资源库</h1>  <!-- ← 修改这里：你的名字 -->
+                
+                <!-- 📝 修改个人简介：直接修改下面引号内的文字 -->
+                <p class="profile-bio" id="profileBio">[ 最新资讯·即时访问·数字未来 ]</p>  <!-- ← 修改这里：你的简介 -->
+                
+                <!-- ========================================
+                     📊 统计数据区域 - 修改指南 2️⃣
+                     ======================================== -->
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <!-- 📊 修改关注者数量：修改下面的数字 -->
+                        <span class="stat-number">1.2K</span>  <!-- ← 修改这里：关注者数量 -->
+                        <span class="stat-label">关注者</span>
+                    </div>
+                    <div class="stat-item">
+                        <!-- 📊 修改点击量：修改下面的数字 -->
+                        <span class="stat-number">856</span>  <!-- ← 修改这里：点击量 -->
+                        <span class="stat-label">点击量</span>
+                    </div>
+                    <div class="stat-item">
+                        <!-- 📊 修改链接数：修改下面的数字 -->
+                        <span class="stat-number">3</span>  <!-- ← 修改这里：链接数 -->
+                        <span class="stat-label">链接</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================
+                 🔗 链接区域 - 修改指南 3️⃣ 和 4️⃣
+                 ======================================== -->
+            <section class="links-section">
+                <div class="main-links">
+                    
+                    <!-- 🔗 第一个链接 - 修改指南 3️⃣ -->
+                    <a href="https://pan.quark.cn/s/f481cda81948" class="main-link gradient-1" data-analytics="官网">  <!-- ← 修改这里：链接地址 -->
+                        <!-- 🍉 西瓜图标 -->
+                        <span class="watermelon-icon">🍉</span>
+                        <!-- 📝 修改链接标题：直接修改下面的文字 -->
+                        <span>新 瓜 速 递</span>  <!-- ← 修改这里：链接标题 -->
+                        <i class="fas fa-arrow-right arrow"></i>
+                    </a>
+                    
+                    <!-- 🔗 第二个链接 - 修改指南 3️⃣ -->
+                    <a href="https://pan.quark.cn/s/f481cda81948" class="main-link gradient-2" data-analytics="作品集">  <!-- ← 修改这里：链接地址 -->
+                        <!-- 💾 网盘图标 -->
+                        <i class="fas fa-cloud"></i>
+                        <!-- 📝 修改链接标题：直接修改下面的文字 -->
+                        <span>海量资源</span>  <!-- ← 修改这里：链接标题 -->
+                        <i class="fas fa-arrow-right arrow"></i>
+                    </a>
+                    
+                    <!-- 🔗 第三个链接 - 修改指南 3️⃣ -->
+                    <a href="https://qm.qq.com/q/RpVfAmtnQm" class="main-link gradient-3" data-analytics="博客">  <!-- ← 修改这里：链接地址 -->
+                        <!-- 🐧 QQ企鹅图标 -->
+                        <span class="penguin-icon">🐧</span>
+                        <!-- 📝 修改链接标题：直接修改下面的文字 -->
+                        <span>一 键 进 群</span>  <!-- ← 修改这里：链接标题 -->
+                        <i class="fas fa-arrow-right arrow"></i>
+                    </a>
+                    
+                    <!-- 
+                    ➕ 添加新链接：复制上面的 <a> 标签，修改 href 和文字
+                    🎨 渐变颜色：gradient-1 (蓝紫), gradient-2 (橙红), gradient-3 (绿青)
+                    🎨 常用图标：
+                    - fas fa-heart (爱心)
+                    - fas fa-music (音乐)
+                    - fas fa-camera (相机)
+                    - fas fa-envelope (邮件)
+                    - fas fa-phone (电话)
+                    - fas fa-map-marker-alt (位置)
+                    - fas fa-star (星星)
+                    - fas fa-shopping-cart (购物车)
+                    -->
+                    
+                </div>
+            </section>
+
+            <!-- ========================================
+                 📱 二维码分享区域 - 修改指南 5️⃣
+                 ========================================
+                 📍 修改二维码内容：在 simple-script.js 中修改设置
+                 📍 修改二维码样式：在 simple-script.js 中修改颜色和尺寸
+                 ======================================== -->
+            <section class="qr-section">
+                <div class="qr-container">
+                    <div class="qr-code" id="qrCode">
+                        <canvas id="qrCanvas"></canvas>
+                    </div>
+                    <!-- 📝 修改二维码说明文字：直接修改下面的文字 -->
+                    <p class="qr-text">扫描二维码分享我的链接</p>  <!-- ← 修改这里：二维码说明 -->
+                    <p class="qr-description">使用微信、支付宝等扫码工具快速访问</p>  <!-- ← 修改这里：二维码描述 -->
+                </div>
+            </section>
+        </main>
+
+        <!-- 底部工具栏 -->
+        <footer class="toolbar">
+            <button class="tool-btn" id="shareBtn">
+                <i class="fas fa-share-alt"></i>
+                <span>分享</span>
+            </button>
+            <button class="tool-btn" id="themeBtn">
+                <i class="fas fa-palette"></i>
+                <span>主题</span>
+            </button>
+            <button class="tool-btn" id="analyticsBtn">
+                <i class="fas fa-chart-line"></i>
+                <span>统计</span>
+            </button>
+        </footer>
+
+        <!-- 分享模态框 -->
+        <div class="modal" id="shareModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>分享我的链接</h3>
+                    <button class="close-btn" id="closeShareModal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="share-content">
+                    <div class="share-url">
+                        <input type="text" id="shareUrl" value="" readonly>
+                        <button class="copy-btn" id="copyUrlBtn">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="simple-script.js"></script>
+</body>
+</html> 
